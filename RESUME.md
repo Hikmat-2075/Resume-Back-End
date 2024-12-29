@@ -1,30 +1,44 @@
-# Resume-Back-End
-
-Back End adalah bagian dari website yang berfungsi untuk menjalankan web dari balik layar dan memiliki banyak API (Application Programming Interface) yang digunakan. Rest API adalah salah satunya.
+Back End adalah bagian dari web, berbeda dengan front end back end bekerja di bagian layar yang memproses front end supaya berjalan, contohnya ada banyak sekali di web maupun aplikasi, Back End itu biasanya menggunakan API ada banyak sekali API salah satunya REST API
 
 Apa Itu REST API?
-REST API adalah cara aplikasi berbicara dengan aplikasi lainnya lewat internet. “REST” sendiri singkatan dari Representational State Transfer, yang merupakan cara untuk merancang sistem yang saling terhubung menggunakan jaringan. Sementara API adalah singkatan dari Application Programming Interface, yaitu antarmuka yang memungkinkan dua aplikasi berbicara satu sama lain, bertukar data, dan menjalankan tugas tertentu.
-
-Jadi, REST API adalah jenis API yang mengikuti aturan-aturan tertentu dalam desain sistem yang disebut REST, yang dirancang agar lebih mudah digunakan, ringan, dan fleksibel.
+REST itu singkatan dari "Representational State Transfer", jadi REST itu adalah  gaya arsitekur yang digunakan dalam web
+API itu singkatan dari "Application Programming Interface", jadi API itu adalah aturan yang digunakan dalam web untk saling berkomunikasi dan interaksi
+REST API adalah jenis API yang mengikuti gaya REST
 
 Mengapa REST API Digunakan?
-REST API digunakan oleh pengembang untuk memungkinkan aplikasi yang berbeda berinteraksi satu sama lain. Misalnya, jika menggunakan suatu aplikasi di ponsel, aplikasi tersebut bisa mengakses data dari server lain melalui REST API. Tanpa REST API, aplikasi tersebut tidak bisa mendapatkan data tanpa membangun sistem mereka sendiri dari awal.
+REST API digunakan karena mempermudah aplikasi untuk terhubung dengan aplikasi lainnya. misalnya ketika menggunakan LMS Telkom University, di web tersebut mengambil data mahasiswa atapun mata kuliah dari server melalui REST API.  
 
-Contoh lain adalah saat login ke suatu situs menggunakan akun Google atau Facebook. Di balik layar, situs tersebut menggunakan REST API untuk berkomunikasi dengan server Google atau Facebook, sehingga bisa masuk tanpa perlu membuat akun baru.
+Contoh lain adalah saat Anda login ke sebuah website menggunakan akun Google atau Facebook. Di balik layar, REST API digunakan untuk menghubungkan website dengan server Google atau Facebook agar Anda bisa login tanpa harus membuat akun baru.
 
 Apa yang Dilakukan oleh REST API?
-REST API bekerja dengan cara menghubungkan dua aplikasi melalui protokol HTTP (yang biasa digunakan untuk mengakses halaman web). Aplikasi yang membutuhkan data akan mengirimkan permintaan ke server menggunakan metode HTTP tertentu, dan server akan mengirimkan respons kembali, yang berisi data yang diminta.
+REST API melskuksn berbagai cara atau operasi pada sumber daya server melalui HTTP. sumber daya ini bisa merupakan data atau objek tergantung dari apa yang mau diakses dan bisa juga memodifikasi data tersebut
 
-Ada beberapa hal yang REST API lakukan, seperti:
-  1. Mengambil Data: Misalnya, aplikasi ingin menampilkan suatu data, maka aplikasi akan mengirimkan permintaan GET untuk mendapatkan data tersebut dari server.
-  2. Menambahkan Data: misalnya menambah data seseorang yang memerlukan login ke dalam aplikasi, REST API akan mengirim permintaan POST untuk mengirim data ke server
-  3. Mengubah Data: Jika ada data yang perlu diperbarui, misalnya mengganti alamat email, REST API akan mengirim permintaan PUT untuk memperbarui data yang sudah ada.
-  4. Menghapus Data: Jika ada data yang perlu dihapus, misalnya menghapus akun pengguna, REST API akan mengirim permintaan DELETE ke server.
+Berikut adalah beberapa hal yang bisa dilakukan oleh REST API:
+- Mengambil Data:
+  REST API mengambil dan membaca data dengan metode GET 
+- Menambahkan Data:
+  REST API membuat atau menambahkan data baru ke server menggunakan metode POST.
+Mengubah Data:
+  jika ada data yang ingin diubah atau memperbarui data, REST API menggunakan meggunakan metode PUT.
+- Menghapus Data:
+  untuk menghapus data menggunakan metode DELETE, REST API akan menghapus data yang ada di server
 
-Mengapa REST API Populer?
-REST API sangat populer karena kesederhanaannya. Dengan menggunakan standar HTTP yang sudah ada, REST API membuat aplikasi lebih mudah berkomunikasi satu sama lain. Pengembang tidak perlu khawatir tentang protokol yang rumit, dan cukup mengikuti prinsip REST, seperti:
+Kelebihan REST API:
+- Sederehana dan mudah digunakan
+- Interoperabilitas
+- stateless
+- skalabilitas
+- format respons yang fleksibel
+- penggunaan metode HTTP yang standar
 
-- Menggunakan URL untuk mewakili sumber daya (data).
-- Menggunakan metode HTTP standar seperti API yang lainnya seperti Get, Post, Put, Delete
-- Setiap permintaan yang dibuat adalah stateless (tidak ada informasi yang disimpan dari permintaan sebelumnya).
+Kelemahan REST API:
+- Tidak mendukung Transaksi yang kompleks
+- beban pada klien untuk mengelola status
+- tidak efisien utuk data dengan hubungan kompleks
+
+kesimpulan:
+jadi REST API itu digunakan untuk komunikasi antara aplikasi dan server melaui HTTP. REST API ada metodenya seperti (GET, POST, PUT, DELETE)
+kelebihan REST API dalam kesederhanaan dan kemudahan penggunaan, kelemahannya seperti tidak mendukung transaksi yang terlalu kompleks
+secara keseluruhan, REST API sangat bermanfaat dalam berbagai aplikasi maupun perngkat lunak, namun tidak cocok dalam data yang hubungannya kompleks
+
 
